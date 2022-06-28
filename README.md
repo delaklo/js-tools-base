@@ -1,4 +1,5 @@
 # js-tools-base
+[![NPM Version](https://img.shields.io/npm/v/js-tools-base)](https://www.npmjs.com/package/js-tools-base)
 A ligthweight javascript tool library for various needs.
 
 ## Version 1.0.0
