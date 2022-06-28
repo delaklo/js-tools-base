@@ -74,7 +74,7 @@ console.log(isSorted([1,3,4,9,13])); //true
 console.log(isSorted([5, 7, 1, 67])); //false
 ```
 
-<b>shuffleArr()</b><br>
+<b>shuffleArray()</b><br>
 
 Shuffles the values of an array, returning a new array.
 ```js
