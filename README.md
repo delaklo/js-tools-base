@@ -8,7 +8,10 @@ There are only 6 js tools such as isObject, isDate, isEmptyOrOnlySpacesString, g
 ```sh
 $ npm install js-tools-base
 ```
-
+## Usage
+```js
+const { getTimeZone, isObject, <or any tool what you need> } = require("js-tools-base");
+```
 ## List of tools
 <b>isObject()</b><br>
 
