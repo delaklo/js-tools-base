@@ -26,7 +26,7 @@ function getTimeZone() {
       return Intl.DateTimeFormat().resolvedOptions().timeZone;
   }
   
-function doesObjectHasEmptyProperties(obj) {
+function doesObjectHaveEmptyProperties(obj) {
     let emptyKeys = [];
           for(let key in obj) {
           if(obj[key] === "") {
@@ -55,7 +55,7 @@ function shuffleArray (arr){
     isDate,
     isEmptyOrOnlySpacesString,
     getTimeZone,
-    doesObjectHasEmptyProperties,
+    doesObjectHaveEmptyProperties,
     isSorted,
     shuffleArray,
   }
