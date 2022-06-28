@@ -1,0 +1,26 @@
+{
+  "name": "js-tools-base",
+  "version": "1.0.0",
+  "description": "A lightweight javascript tool library for various needs",
+  "main": "index.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/delaklo/js-tools-base.git"
+  },
+  "keywords": [
+    "js",
+    "javascript",
+    "tools",
+    "library"
+  ],
+ 
+  "author": "Vitaliy Putienko <delaklovp@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/delaklo/js-tools-base/issues"
+  },
+  "homepage": "https://github.com/delaklo/js-tools-base#readme"
+}
