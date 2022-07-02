@@ -50,6 +50,10 @@ function shuffleArray (arr){
   return arr;
 }
 
+function generateRandomIntArr(len, upTo){
+  return Array.from({ length: len }, () => Math.floor(Math.random() * upTo));
+}
+
   module.exports = {
     isObject,
     isDate,
@@ -58,4 +62,5 @@ function shuffleArray (arr){
     doesObjectHaveEmptyProperties,
     isSorted,
     shuffleArray,
+    generateRandomIntArr,
   }

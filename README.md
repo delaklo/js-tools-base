@@ -1,9 +1,9 @@
 # js-tools-base
 [![NPM Version](https://img.shields.io/npm/v/js-tools-base)](https://www.npmjs.com/package/js-tools-base) <br>
-Ligthweight javascript tool library for various needs.
+A lightweight javascript tool library for various needs.
 
 ## Version 1.1.0
-There are only 8 js tools such as isObject, isDate, isEmptyOrOnlySpacesString, getTimeZone, doesObjectHaveEmptyProperties, isSorted, shuffleArray.
+There are only 8 js tools such as isObject, isDate, isEmptyOrOnlySpacesString, getTimeZone, doesObjectHaveEmptyProperties, isSorted, shuffleArray, generateRandomIntAr.
 
 ## Installation
 ```sh
@@ -84,6 +84,14 @@ Shuffles the values of an array, returning a new array.
 ```js
 let arr = [4, 6, 7, 9];
 console.log(shuffleArray(arr)); //[7, 4, 9, 6]
+```
+
+<b>generateRandomIntArr()</b><br>
+
+Generates an array with random int values. First argument sets length of array, second - max possible integer.
+```js
+console.log(generateRandomIntArr(8, 100)); //[ 41, 4, 52, 9, 82, 50, 19, 60 ]
+console.log(generateRandomIntArr(5, 5)); //[ 1, 0, 2, 0, 4 ]
 ```
 
 ## Follow me and my email to cooperate
