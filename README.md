@@ -30,7 +30,7 @@ let date = Date.now();
 console.log(isDate(date)); //true
 ```
 
-<b>isDate()</b><br>
+<b>isEmptyOrOnlySpacesString()</b><br>
 
 Checks is string empty or has only spaces.
 ```js
@@ -66,8 +66,8 @@ const data = {
     email: "sal@email.com",
     mobile: "122344566"
 }
-console.log(doesObjectHaveEmptyProperties(obj)); //dataOfBirth is empty, mobile is empty, others keys are filled
-console.log(doesObjectHaveEmptyProperties(data)); //others keys are filled
+console.log(doesObjectHaveEmptyProperties(obj)); //dataOfBirth is empty, mobile is empty, other keys are filled
+console.log(doesObjectHaveEmptyProperties(data)); //other keys are filled
 ```
 
 <b>IsSorted()</b><br>
@@ -88,7 +88,7 @@ console.log(shuffleArray(arr)); //[7, 4, 9, 6]
 
 <b>generateRandomIntArr()</b><br>
 
-Generates an array with random int values. First argument sets length of array, second - max possible integer.
+Generates an array with random int values. First argument is the length of array, second is the max possible integer.
 ```js
 console.log(generateRandomIntArr(8, 100)); //[ 41, 4, 52, 9, 82, 50, 19, 60 ]
 console.log(generateRandomIntArr(5, 5)); //[ 1, 0, 2, 0, 4 ]
