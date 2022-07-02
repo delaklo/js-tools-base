@@ -1,9 +1,9 @@
 # js-tools-base
-[![NPM Version](https://img.shields.io/npm/v/js-tools-base)](https://www.npmjs.com/package/js-tools-base)
-A ligthweight javascript tool library for various needs.
+[![NPM Version](https://img.shields.io/npm/v/js-tools-base)](https://www.npmjs.com/package/js-tools-base) <br>
+Ligthweight javascript tool library for various needs.
 
-## Version 1.0.0
-There are only 6 js tools such as isObject, isDate, isEmptyOrOnlySpacesString, getTimeZone, doesObjectHasEmptyProperties, isSorted, shuffleArray.
+## Version 1.1.0
+There are only 8 js tools such as isObject, isDate, isEmptyOrOnlySpacesString, getTimeZone, doesObjectHaveEmptyProperties, isSorted, shuffleArray.
 
 ## Installation
 ```sh
@@ -11,7 +11,7 @@ $ npm install js-tools-base
 ```
 ## Usage
 ```js
-const { getTimeZone, isObject, <or any tool what you need> } = require("js-tools-base");
+const { ExampleTool } = require("js-tools-base");
 ```
 ## List of tools
 <b>isObject()</b><br>
@@ -66,8 +66,8 @@ const data = {
     email: "sal@email.com",
     mobile: "122344566"
 }
-console.log(doesObjectHaveEmptyProperties(obj));
-console.log(doesObjectHaveEmptyProperties(data));
+console.log(doesObjectHaveEmptyProperties(obj)); //dataOfBirth is empty, mobile is empty, others keys are filled
+console.log(doesObjectHaveEmptyProperties(data)); //others keys are filled
 ```
 
 <b>IsSorted()</b><br>
