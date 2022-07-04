@@ -99,3 +99,5 @@ console.log(generateRandomIntArr(5, 5)); //[ 1, 0, 2, 0, 4 ]
 [Twitter](https://twitter.com/delaklo)
 
 delaklovp@gmail.com
+
+<b>at least if one of the tools you like, please star the repo. if you have free time feel free to contribute to this library</b>
