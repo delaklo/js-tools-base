@@ -1,22 +1,7 @@
-function isObject(val) {
-      if (val === null) { return false;}
-      return ( (typeof val === 'function') || (typeof val === 'object') );
-  }
-  
-function isDate(value) {
-      switch (typeof value) {
-          case 'number':
-              return true;
-          case 'string':
-              return !isNaN(Date.parse(value));
-          case 'object':
-              if (value instanceof Date) {
-                  return !isNaN(value.getTime());
-              }
-          default:
-              return false;
-      }
-  }
+function isObject(value) {
+  var type = typeof value;
+  return value != null && (type == 'object' || type == 'function');
+}
   
 function isEmptyOrOnlySpacesString(str) {
       return (!str || /^\s*$/.test(str));
@@ -26,41 +11,45 @@ function getTimeZone() {
       return Intl.DateTimeFormat().resolvedOptions().timeZone;
   }
   
-function doesObjectHaveEmptyProperties(obj) {
-    let emptyKeys = [];
+function doesObjectHaveEmptyProps(obj) {
+    const emptyKeys = [];
           for(let key in obj) {
           if(obj[key] === "") {
              emptyKeys.push(key + " is empty.\n");
-          }
-            
+          }    
       }
     return emptyKeys.join('') + ' other keys are filled';
   }
 
-function isSorted (arr){
-  return arr.every((a,b,c) => !b || c[b-1] <= a);
+function isSorted (list){
+  return list.every((v,i,l) => !i || l[i-1] <= v);
 }
 
-function shuffleArray (arr){
-  let len = arr.length;
+function shuffleArray (list){
+  let res = Array.from(list);
+  let len = list.length;
   while (len) {
     const i = Math.floor(Math.random() * len--);
-    [arr[len], arr[i]] = [arr[i], arr[len]];
+    [res[len],res[i]] = [res[i], res[len]];
   }
-  return arr;
+  return res;
 }
 
-function generateRandomIntArr(len, upTo){
-  return Array.from({ length: len }, () => Math.floor(Math.random() * upTo));
+function generateRandomIntList(len, max){
+  return Array.from({ length: len }, () => Math.floor(Math.random() * max));
+}
+
+function randomInt(min, max){
+  return Math.floor(Math.random() * (Math.ceil(max) - Math.floor(min))) + min;
 }
 
   module.exports = {
     isObject,
-    isDate,
     isEmptyOrOnlySpacesString,
     getTimeZone,
-    doesObjectHaveEmptyProperties,
+    doesObjectHaveEmptyProps,
     isSorted,
     shuffleArray,
-    generateRandomIntArr,
+    generateRandomIntList,
+    randomInt,
   }

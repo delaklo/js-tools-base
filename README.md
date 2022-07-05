@@ -3,7 +3,7 @@
 A lightweight javascript tool library for various needs.
 
 ## Version 1.1.0
-There are only 8 js tools such as isObject, isDate, isEmptyOrOnlySpacesString, getTimeZone, doesObjectHaveEmptyProperties, isSorted, shuffleArray, generateRandomIntAr.
+There are only 8 js tools such as isObject, isEmptyOrOnlySpacesString, getTimeZone, doesObjectHaveEmptyProps, isSorted, shuffleArray, generateRandomIntList, randomInt.
 
 ## Installation
 ```sh
@@ -14,7 +14,7 @@ $ npm install js-tools-base
 const { ExampleTool } = require("js-tools-base");
 ```
 ## List of tools
-<b>isObject()</b><br>
+<b>isObject(object)</b><br>
 
 Check is that object in argument of function or not.
 ```js
@@ -22,15 +22,7 @@ console.log(isObject({ "id": 123, "message": "hello Iphone" })); //true
 console.log(isObject('some string')); //false
 ```
 
-<b>isDate()</b><br>
-
-Checks is that date in argument of function or not.
-```js
-let date = Date.now();
-console.log(isDate(date)); //true
-```
-
-<b>isEmptyOrOnlySpacesString()</b><br>
+<b>isEmptyOrOnlySpacesString(string)</b><br>
 
 Checks is string empty or has only spaces.
 ```js
@@ -47,7 +39,7 @@ Gets the requester's time zone.
 console.log(getTimeZone()); //europe/kiev
 ```
 
-<b>doesObjectHaveEmptyProperties()</b><br>
+<b>doesObjectHaveEmptyProperties(object)</b><br>
 
 checks does object have blank properties.
 ```js
@@ -66,11 +58,11 @@ const data = {
     email: "sal@email.com",
     mobile: "122344566"
 }
-console.log(doesObjectHaveEmptyProperties(obj)); //dataOfBirth is empty, mobile is empty, other keys are filled
-console.log(doesObjectHaveEmptyProperties(data)); //other keys are filled
+console.log(doesObjectHaveEmptyProps(obj)); //dataOfBirth is empty, mobile is empty, other keys are filled
+console.log(doesObjectHaveEmptyProps(data)); //other keys are filled
 ```
 
-<b>IsSorted()</b><br>
+<b>IsSorted(array)</b><br>
 
 Checks is sorted array in argument of function or not.
 ```js
@@ -78,7 +70,7 @@ console.log(isSorted([1,3,4,9,13])); //true
 console.log(isSorted([5, 7, 1, 67])); //false
 ```
 
-<b>shuffleArray()</b><br>
+<b>shuffleArray(array)</b><br>
 
 Shuffles the values of an array, returning a new array.
 ```js
@@ -86,12 +78,20 @@ let arr = [4, 6, 7, 9];
 console.log(shuffleArray(arr)); //[7, 4, 9, 6]
 ```
 
-<b>generateRandomIntArr()</b><br>
+<b>generateRandomIntList(length, max)</b><br>
 
 Generates an array with random int values. First argument is the length of array, second is the max possible integer.
 ```js
-console.log(generateRandomIntArr(8, 100)); //[ 41, 4, 52, 9, 82, 50, 19, 60 ]
-console.log(generateRandomIntArr(5, 5)); //[ 1, 0, 2, 0, 4 ]
+console.log(generateRandomIntList(8, 100)); //[ 41, 4, 52, 9, 82, 50, 19, 60 ]
+console.log(generateRandomIntList(5, 5)); //[ 1, 0, 2, 0, 4 ]
+```
+
+<b>randomInt(min, max)</b><br>
+
+Generates an integer between the minimum given value and the maximum given value.
+```js
+console.log(randomInt(3, 576)); // 207
+console.log(randomInt(50, 60)); // 58
 ```
 
 ## Follow me and my email to cooperate
