@@ -34,7 +34,7 @@ function doesObjectHaveEmptyProperties(obj) {
           }
             
       }
-    return emptyKeys.join('') + ' others keys are filled';
+    return emptyKeys.join('') + ' other keys are filled';
   }
 
 function isSorted (arr){
