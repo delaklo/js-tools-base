@@ -2,7 +2,7 @@
 [![NPM Version](https://img.shields.io/npm/v/js-tools-base)](https://www.npmjs.com/package/js-tools-base) <br>
 A lightweight javascript tool library for various needs.
 
-## Version 1.1.0
+## Version 1.2.0
 There are only 8 js tools such as isObject, isEmptyOrOnlySpacesString, getTimeZone, doesObjectHaveEmptyProps, isSorted, shuffleArray, generateRandomIntList, randomInt.
 
 ## Installation
