@@ -3,7 +3,7 @@
 A lightweight javascript tool library for various needs.
 
 ## Version 1.2.0
-There are only 8 js tools such as isObject, isEmptyOrOnlySpacesString, getTimeZone, doesObjectHaveEmptyProps, isSorted, shuffleArray, generateRandomIntList, randomInt.
+List of tools: isObject, isEmptyOrOnlySpacesString, getTimeZone, doesObjectHaveEmptyProps, isSorted, shuffleArray, generateRandomIntList, randomInt.
 
 ## Installation
 ```sh
