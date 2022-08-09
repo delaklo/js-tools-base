@@ -101,3 +101,7 @@ console.log(randomInt(50, 60)); // 58
 delaklovp@gmail.com
 
 <b>at least if one of the tools you like, please star the repo. if you have free time feel free to contribute to this library</b>
+
+## To do
+
+add to do
