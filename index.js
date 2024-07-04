@@ -43,6 +43,31 @@ function randomInt(min, max){
   return Math.floor(Math.random() * (Math.ceil(max) - Math.floor(min))) + min;
 }
 
+function capitalizeFirstLetter(string) {
+  if (typeof string !== 'string' || !string.length) return '';
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
+function debounce(func, wait) {
+  let timeout;
+  return function(...args) {
+      clearTimeout(timeout);
+      timeout = setTimeout(() => func.apply(this, args), wait);
+  };
+}
+
+function getQueryParams(url) {
+  const params = {};
+  new URL(url).searchParams.forEach((value, key) => {
+      params[key] = value;
+  });
+  return params;
+}
+
+function flattenArray(arr) {
+  return arr.reduce((flat, toFlatten) => flat.concat(Array.isArray(toFlatten) ? flattenArray(toFlatten) : toFlatten), []);
+}
+
   module.exports = {
     isObject,
     isEmptyOrOnlySpacesString,
@@ -52,4 +77,8 @@ function randomInt(min, max){
     shuffleArray,
     generateRandomIntList,
     randomInt,
+    capitalizeFirstLetter,
+    debounce,
+    getQueryParams,
+    flattenArray,
   }
