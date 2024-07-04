@@ -94,6 +94,37 @@ console.log(randomInt(3, 576)); // 207
 console.log(randomInt(50, 60)); // 58
 ```
 
+<b>capitalizeFirstLetter(string)</b><br>
+
+Capitalizes the first letter of a string.
+```js
+console.log(capitalizeFirstLetter('hello')); // Hello
+console.log(capitalizeFirstLetter('')); // ''
+```
+
+<b>debounce(func, wait)</b><br>
+Debounces a function to limit its execution rate.
+```js
+const log = debounce(() => console.log('Debounced!'), 1000);
+log();
+log();
+log(); // Only this call will log 'Debounced!' after 1 second
+```
+
+<b>getQueryParams(url)</b><br>
+Parses URL query parameters into an object.
+
+```js
+console.log(getQueryParams('https://example.com?page=1&sort=asc')); // { page: '1', sort: 'asc' }
+```
+
+<b>flattenArray(arr)</b><br>
+Flattens a nested array.
+
+```js
+console.log(flattenArray([1, [2, [3, [4]], 5]])); // [1, 2, 3, 4, 5]
+```
+
 ## Follow me and my email to cooperate
 
 [Twitter](https://twitter.com/delaklo)
